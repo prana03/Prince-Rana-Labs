@@ -1,0 +1,26 @@
+[gd_scene load_steps=5 format=3 uid="uid://c2p0hnlg08m1o"]
+
+[ext_resource type="Texture2D" uid="uid://coktsbxrh311m" path="res://Pictures/trunks.png" id="2_rde40"]
+[ext_resource type="Texture2D" uid="uid://d0br1o6pkdy86" path="res://Pictures/DBFZ_Teen_Gohan_color1.png" id="2_rjj1i"]
+[ext_resource type="PackedScene" uid="uid://d2ox7xa3v2ibe" path="res://tree.tscn" id="3_curv1"]
+[ext_resource type="PackedScene" uid="uid://ckm2ifmo24y5g" path="res://tree_2.tscn" id="4_6c71c"]
+
+[node name="Icon" type="Sprite2D"]
+position = Vector2(579, 197)
+scale = Vector2(1.56641, 1.57422)
+
+[node name="Gohan" type="Sprite2D" parent="."]
+position = Vector2(-264.424, 156.903)
+scale = Vector2(0.549359, 0.538892)
+texture = ExtResource("2_rjj1i")
+
+[node name="Trunks" type="Sprite2D" parent="."]
+position = Vector2(269.406, 151.821)
+scale = Vector2(0.208229, 0.196848)
+texture = ExtResource("2_rde40")
+
+[node name="Tree" parent="." instance=ExtResource("3_curv1")]
+position = Vector2(-120.658, 42.5608)
+
+[node name="Tree2" parent="." instance=ExtResource("4_6c71c")]
+position = Vector2(72.1395, 45.1017)
